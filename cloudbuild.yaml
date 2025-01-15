@@ -1,0 +1,19 @@
+steps:
+- name: 'ubuntu'
+  args: ['ls', '-l', 'cloud-builders']
+- name: 'ubuntu'
+  args: ['ls', '-l', 'node-amqp']
+
+dependencies:
+- git_source:
+    repository:
+      url: "https://github.com/ronanww/node-amqp.git"
+    revision: "master"
+    dest_path: "node-amqp"
+    recurse_submodules: true
+- git_source:
+    repository:
+      url: "https://github.com/ronanww/cloud-builders.git"
+    revision: "7a4a9af10a6acbc2c6c6f40522eb38e199f8c28d"
+    dest_path: "cloud-builders"
+    depth: 5
