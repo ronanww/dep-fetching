@@ -1,3 +1,6 @@
 [submodule "docker-build"]
 	path = docker-build
 	url = https://github.com/ronanww/docker-build.git
+[submodule "node-amqp"]
+	path = node-amqp
+	url = https://github.com/ronanww/node-amqp
